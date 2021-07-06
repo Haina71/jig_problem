@@ -10,6 +10,7 @@ var calcBmi = function () {
   h_value /= 100;
   var bmi = w_value / (h_value * h_value);
   bmi = Math.floor(bmi * 100) / 100;
+  output.innerHTML = bmi;
 }
 
 button.addEventListener('click', calcBmi);
